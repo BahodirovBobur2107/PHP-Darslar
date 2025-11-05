@@ -31,5 +31,37 @@ $son = [4,8,"test"];
 echo $son[2];
 echo "\n";
 $User = ["ism" => "Bobur", "familya" => "Bahodirov", "t-yili" => 2011];
-echo $User ['ism']
+echo $User ['ism'];
+echo "\n";
+echo "\n";
+
+$User ['familya'] = "Valiyev";
+echo $User ['familya'];
+
+$users = 
+	[
+		"ism" => "Bobur",
+		"familya" => "Bahodirov",
+		"t-yili" => 2011
+	];
+
+	print_r($users);
+
+	$users ['familya'] = "Valiyev";
+	echo $users ['familya'];
+	echo "\n";
+	foreach($users as $key => $item){
+		echo $key.": ".$item."\n";
+	};
+
+	$son =[];
+	$son['ism'] = "test1";
+	$son[0] = 12;
+	$son[1] = 19;
+	$son['ism'] = "test";
+	print_r($son);
+	$sonlar = [5,12,35,65,42,1];
+	array_splice($sonlar, 2, 2);
+	print_r($sonlar);
+
 ?>
